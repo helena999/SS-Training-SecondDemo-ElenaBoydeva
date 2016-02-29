@@ -28,3 +28,33 @@ c:\users\helena\documents\visual studio 2013\Projects\EmployeesManagementSystem\
 c:\users\helena\documents\visual studio 2013\Projects\EmployeesManagementSystem\EmployeesManagementSystem\obj\Debug\EmployeesManagementSystem.dll
 c:\users\helena\documents\visual studio 2013\Projects\EmployeesManagementSystem\EmployeesManagementSystem\obj\Debug\EmployeesManagementSystem.pdb
 C:\Users\Helena\documents\visual studio 2013\Projects\EmployeesManagementSystem\EmployeesManagementSystem\obj\Debug\EmployeesManagementSystem.csprojResolveAssemblyReference.cache
+C:\Users\Helena\Desktop\SS-Training-SecondDemo-ElenaBoydeva\Second Demo\EmployeesManagementSystem\EmployeesManagementSystem\bin\EmployeesManagementSystem.dll.config
+C:\Users\Helena\Desktop\SS-Training-SecondDemo-ElenaBoydeva\Second Demo\EmployeesManagementSystem\EmployeesManagementSystem\bin\EmployeesManagementSystem.dll
+C:\Users\Helena\Desktop\SS-Training-SecondDemo-ElenaBoydeva\Second Demo\EmployeesManagementSystem\EmployeesManagementSystem\bin\EmployeesManagementSystem.pdb
+C:\Users\Helena\Desktop\SS-Training-SecondDemo-ElenaBoydeva\Second Demo\EmployeesManagementSystem\EmployeesManagementSystem\bin\Antlr3.Runtime.dll
+C:\Users\Helena\Desktop\SS-Training-SecondDemo-ElenaBoydeva\Second Demo\EmployeesManagementSystem\EmployeesManagementSystem\bin\EntityFramework.dll
+C:\Users\Helena\Desktop\SS-Training-SecondDemo-ElenaBoydeva\Second Demo\EmployeesManagementSystem\EmployeesManagementSystem\bin\EntityFramework.SqlServer.dll
+C:\Users\Helena\Desktop\SS-Training-SecondDemo-ElenaBoydeva\Second Demo\EmployeesManagementSystem\EmployeesManagementSystem\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Helena\Desktop\SS-Training-SecondDemo-ElenaBoydeva\Second Demo\EmployeesManagementSystem\EmployeesManagementSystem\bin\Newtonsoft.Json.dll
+C:\Users\Helena\Desktop\SS-Training-SecondDemo-ElenaBoydeva\Second Demo\EmployeesManagementSystem\EmployeesManagementSystem\bin\System.Web.Helpers.dll
+C:\Users\Helena\Desktop\SS-Training-SecondDemo-ElenaBoydeva\Second Demo\EmployeesManagementSystem\EmployeesManagementSystem\bin\System.Web.Mvc.dll
+C:\Users\Helena\Desktop\SS-Training-SecondDemo-ElenaBoydeva\Second Demo\EmployeesManagementSystem\EmployeesManagementSystem\bin\System.Web.Optimization.dll
+C:\Users\Helena\Desktop\SS-Training-SecondDemo-ElenaBoydeva\Second Demo\EmployeesManagementSystem\EmployeesManagementSystem\bin\System.Web.Razor.dll
+C:\Users\Helena\Desktop\SS-Training-SecondDemo-ElenaBoydeva\Second Demo\EmployeesManagementSystem\EmployeesManagementSystem\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Helena\Desktop\SS-Training-SecondDemo-ElenaBoydeva\Second Demo\EmployeesManagementSystem\EmployeesManagementSystem\bin\System.Web.WebPages.dll
+C:\Users\Helena\Desktop\SS-Training-SecondDemo-ElenaBoydeva\Second Demo\EmployeesManagementSystem\EmployeesManagementSystem\bin\System.Web.WebPages.Razor.dll
+C:\Users\Helena\Desktop\SS-Training-SecondDemo-ElenaBoydeva\Second Demo\EmployeesManagementSystem\EmployeesManagementSystem\bin\WebGrease.dll
+C:\Users\Helena\Desktop\SS-Training-SecondDemo-ElenaBoydeva\Second Demo\EmployeesManagementSystem\EmployeesManagementSystem\bin\EntityFramework.xml
+C:\Users\Helena\Desktop\SS-Training-SecondDemo-ElenaBoydeva\Second Demo\EmployeesManagementSystem\EmployeesManagementSystem\bin\EntityFramework.SqlServer.xml
+C:\Users\Helena\Desktop\SS-Training-SecondDemo-ElenaBoydeva\Second Demo\EmployeesManagementSystem\EmployeesManagementSystem\bin\System.Web.Helpers.xml
+C:\Users\Helena\Desktop\SS-Training-SecondDemo-ElenaBoydeva\Second Demo\EmployeesManagementSystem\EmployeesManagementSystem\bin\System.Web.Mvc.xml
+C:\Users\Helena\Desktop\SS-Training-SecondDemo-ElenaBoydeva\Second Demo\EmployeesManagementSystem\EmployeesManagementSystem\bin\System.Web.Optimization.xml
+C:\Users\Helena\Desktop\SS-Training-SecondDemo-ElenaBoydeva\Second Demo\EmployeesManagementSystem\EmployeesManagementSystem\bin\System.Web.Razor.xml
+C:\Users\Helena\Desktop\SS-Training-SecondDemo-ElenaBoydeva\Second Demo\EmployeesManagementSystem\EmployeesManagementSystem\bin\System.Web.WebPages.xml
+C:\Users\Helena\Desktop\SS-Training-SecondDemo-ElenaBoydeva\Second Demo\EmployeesManagementSystem\EmployeesManagementSystem\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Helena\Desktop\SS-Training-SecondDemo-ElenaBoydeva\Second Demo\EmployeesManagementSystem\EmployeesManagementSystem\bin\System.Web.WebPages.Razor.xml
+C:\Users\Helena\Desktop\SS-Training-SecondDemo-ElenaBoydeva\Second Demo\EmployeesManagementSystem\EmployeesManagementSystem\bin\Antlr3.Runtime.pdb
+C:\Users\Helena\Desktop\SS-Training-SecondDemo-ElenaBoydeva\Second Demo\EmployeesManagementSystem\EmployeesManagementSystem\bin\Newtonsoft.Json.xml
+C:\Users\Helena\Desktop\SS-Training-SecondDemo-ElenaBoydeva\Second Demo\EmployeesManagementSystem\EmployeesManagementSystem\obj\Debug\EmployeesManagementSystem.csprojResolveAssemblyReference.cache
+C:\Users\Helena\Desktop\SS-Training-SecondDemo-ElenaBoydeva\Second Demo\EmployeesManagementSystem\EmployeesManagementSystem\obj\Debug\EmployeesManagementSystem.dll
+C:\Users\Helena\Desktop\SS-Training-SecondDemo-ElenaBoydeva\Second Demo\EmployeesManagementSystem\EmployeesManagementSystem\obj\Debug\EmployeesManagementSystem.pdb

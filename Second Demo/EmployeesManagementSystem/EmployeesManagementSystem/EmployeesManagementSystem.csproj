@@ -226,6 +226,7 @@
     <Content Include="Views\Team\DeleteEmployeeFromTeam.cshtml" />
     <Content Include="Views\Errors\Index.cshtml" />
     <Content Include="Views\Errors\HasTeamLead.cshtml" />
+    <Content Include="Views\Errors\FillAllTheFields.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

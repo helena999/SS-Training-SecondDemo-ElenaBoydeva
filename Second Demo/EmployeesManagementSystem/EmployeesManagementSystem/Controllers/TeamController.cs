@@ -99,6 +99,8 @@ namespace EmployeesManagementSystem.Controllers
                 team.Name = objTeam.Name;
                 team.ManagerID = objTeam.ManagerID;
 
+                team.Employees.FirstOrDefault().ManagerID = team.ManagerID;
+
                 db.SaveChanges();               
             }
 
@@ -132,6 +134,7 @@ namespace EmployeesManagementSystem.Controllers
 
             var employees = from e in db.Employees.ToList()
                             where e.JobPositionID > 3 && e.ManagerID == null
+                            orderby e.JobPosition ascending 
                             select new
                             {
                                 EmployeeID = e.EmployeeID,

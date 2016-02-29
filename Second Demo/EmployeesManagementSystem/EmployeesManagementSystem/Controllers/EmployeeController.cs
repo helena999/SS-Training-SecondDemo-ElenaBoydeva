@@ -43,8 +43,15 @@ namespace EmployeesManagementSystem.Controllers
             if (ModelState.IsValid)
             {
                 db.Employees.Add(employee);
-                db.SaveChanges();
+                try
+                {
+                    db.SaveChanges();
+                }
+                catch
+                {
 
+                    return RedirectToAction("FillAllTheFields", "Errors");
+                }                
                 return RedirectToAction("Index");
             }
             return View(employee);

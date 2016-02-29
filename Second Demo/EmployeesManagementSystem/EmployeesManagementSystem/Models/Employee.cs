@@ -24,6 +24,7 @@ namespace EmployeesManagementSystem.Models
 
         public string LastName { get; set; }
 
+        [Display(Name = "JobPosition")]
         public int JobPositionID { get; set; }
 
         public decimal Salary { get; set; }
@@ -33,7 +34,6 @@ namespace EmployeesManagementSystem.Models
 
         public string Email { get; set; }
 
-        [Display(Name = "Phone")]
         public string Phone { get; set; }
 
         public Nullable<int> ManagerID { get; set; }

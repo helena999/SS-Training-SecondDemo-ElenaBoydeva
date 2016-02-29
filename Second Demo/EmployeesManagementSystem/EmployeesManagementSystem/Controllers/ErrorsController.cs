@@ -33,6 +33,16 @@ namespace EmployeesManagementSystem.Controllers
             return View(team);
         }
 
+        public ActionResult FillAllTheFields()
+        {
+            return View();
+        }
+
+        public ActionResult CreateEmployee()
+        {
+            return RedirectToAction("Create", "Employee"); ;
+        }
+
         protected override void Dispose(bool disposing)
         {
             db.Dispose();
