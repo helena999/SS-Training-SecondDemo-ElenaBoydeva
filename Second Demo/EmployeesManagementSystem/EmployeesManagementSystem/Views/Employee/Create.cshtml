@@ -1,0 +1,131 @@
+﻿@model EmployeesManagementSystem.Models.Employee
+
+@{
+    ViewBag.Title = "Add employee";
+}
+
+<h2>Add employee</h2>
+
+<script src="../../Scripts/jquery-1.10.2.js" type="text/javascript"></script>
+<script src="../../Scripts/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    
+    $(document).ready(function () {
+        //Dropdownlist Selectedchange event
+        $("#JobPositionID").change(function() {
+            $("#ManagerID").empty();
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("GetManagers")',
+                //calling json method
+
+                dataType: 'json',
+
+                data: { id: $("#JobPositionID").val() },
+                // get value of selected  job position and passing same value as input to json method GetManagers.
+
+                success: function(managerList) {
+                    // managers contains the JSON formatted list of managers passed from the controller
+
+                    $.each(managerList, function(i, managList) {
+                        $("#ManagerID").append('<option value="' + managList.Value + '">' +
+                            managList.Text + '</option>');
+                        // here we are adding option for managers
+
+                    });
+                },
+                error: function(ex) {
+                    alert('Failed to retrieve managers.' + ex);
+                }
+            });
+            return false;
+        });
+    });
+</script>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.FirstName,"Frist Name:", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.LastName, "Last Name:", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.LastName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.JobPositionID, "Job Position:", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.JobPositionID, Model.GetJobPosition(),"Select Job Position", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.JobPositionID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Salary, "Salary:", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Salary, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Salary, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TownID, "Workplace:", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.TownID, Model.GetWorkplace(), "Select Workplace", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.TownID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, "Email:",htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Phone, "Phone:", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Phone, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ManagerID, "Manager:", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">            
+                @Html.DropDownListFor(model => model.ManagerID, new SelectList(string.Empty, "Value", "Text"), "-No Manager-", htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessage("Manager", "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+    @section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    }

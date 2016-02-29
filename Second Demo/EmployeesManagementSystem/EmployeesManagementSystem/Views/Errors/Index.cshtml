@@ -1,0 +1,23 @@
+﻿
+@model EmployeesManagementSystem.Models.Team
+
+@{
+    ViewBag.Title = "Error";
+}
+
+<h3>
+    <img src="../../Content/Images/error.png" alt="error" style="width:100px;height:100px;" />
+    You can't add this employee to the team.
+    The correct way to add employees in team is as follows:
+    <ol>
+        <li>Team Leader</li>
+        <li>Senior</li>
+        <li>Intermediate</li>
+        <li>Junior</li>
+        <li>Trainee</li>
+    </ol>
+</h3>
+<div>
+    @Html.ActionLink("Back to team", "AddEmployeeToTeam", new { id = Model.TeamID})
+</div>
+

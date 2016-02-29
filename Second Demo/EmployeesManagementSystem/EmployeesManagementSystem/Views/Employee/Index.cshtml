@@ -1,0 +1,75 @@
+﻿@model IEnumerable<EmployeesManagementSystem.Models.Employee>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>List with all employees</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            First Name
+        </th>
+        <th>
+            Last Name
+        </th>
+        <th>
+            Salary
+        </th>
+        <th>
+            Email
+        </th>
+        <th>
+            Phone
+        </th>
+        <th>
+            Manager
+        </th>
+        <th>
+            Job Position
+        </th>
+        <th>
+            Workplace
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Salary)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Employee1.FirstName)
+            @Html.DisplayFor(modelItem => item.Employee1.LastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JobPosition.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Workplace.Name)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.EmployeeID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.EmployeeID })
+        </td>
+    </tr>
+}
+
+</table>

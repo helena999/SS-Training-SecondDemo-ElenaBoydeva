@@ -1,0 +1,92 @@
+﻿@model EmployeesManagementSystem.Models.Employee
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details of an employee</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            First Name: 
+        </dt>
+
+        <dd>
+            <p>@Html.DisplayFor(model => model.FirstName)</p>
+            
+        </dd>
+
+        <dt>
+            Last Name:
+        </dt>
+
+        <dd>
+            <p>@Html.DisplayFor(model => model.LastName)</p>
+            
+        </dd>
+
+        <dt>
+            Salary:
+        </dt>
+
+        <dd>
+            <p>@Html.DisplayFor(model => model.Salary)</p>
+            
+        </dd>
+
+        <dt>
+            Email:
+        </dt>
+
+        <dd>
+            <p>@Html.DisplayFor(model => model.Email)</p>
+            
+        </dd>
+
+        <dt>
+            Phone:
+        </dt>
+
+        <dd>
+            <p>@Html.DisplayFor(model => model.Phone)</p>
+            
+        </dd>
+
+        <dt>
+            Manager:
+        </dt>
+
+        <dd>
+            <p>
+                @Html.DisplayFor(model => model.Employee1.FirstName)
+                @Html.DisplayFor(model => model.Employee1.LastName)
+            </p>
+
+        </dd>
+
+        <dt>
+            Job Position:
+        </dt>
+
+        <dd>
+            <p>@Html.DisplayFor(model => model.JobPosition.Name)</p>
+            
+        </dd>
+
+        <dt>
+            Workplace:
+        </dt>
+
+        <dd>
+            <p>@Html.DisplayFor(model => model.Workplace.Name)</p>
+            
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EmployeeID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

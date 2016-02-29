@@ -1,0 +1,14 @@
+﻿@model EmployeesManagementSystem.Models.Team
+
+@{
+    ViewBag.Title = "Error";
+}
+
+<h3>
+    <img src="../../Content/Images/error.png" alt="error" style="width:100px;height:100px;" />
+     This team has Team Leader. You can't add second Team Leader
+</h3>
+<div>
+    @Html.ActionLink("Back to team", "AddEmployeeToTeam", new { id = Model.TeamID })
+</div>
+

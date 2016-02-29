@@ -1,0 +1,22 @@
+﻿@model EmployeesManagementSystem.Models.Employee
+
+@{
+    ViewBag.Title = "DeleteEmployeeFromTeam";
+}
+
+<h2>Are you sure you want to delete this employee @Model.FirstName from the team @Model.Teams1.First().Name </h2>
+<p>
+
+</p>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-actions no-color">
+        <input type="submit" value="Delete" class="btn btn-default" /> ||
+        @Html.ActionLink("Back to Team", "Details", new { id = Model.Teams1.First().TeamID })
+    </div>
+}
+
+
